@@ -33,4 +33,3 @@ Funding & Payments
 RESTful web services: Java – JAX-RS (Jersey) on Tomcat DB: MySQL Client: A compatible test client.
 
 Task Allocation https://mysliit-my.sharepoint.com/❌/g/personal/it16176034_my_sliit_lk/EXvpjy_LNftIo_HuFu8sSlUBW_zCic4Zu9AsgfLsyp2uDg?e=TsSkvv
-
