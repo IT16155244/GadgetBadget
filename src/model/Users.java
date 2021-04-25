@@ -62,7 +62,6 @@ public class Users {
 				output += "<td>" + pwd + "</td>";
 				output += "<td>" + email + "</td>";
 				output += "<td>" + uType + "</td>";
-				
 			} 
 			con.close(); 
 			// Complete the table
@@ -74,7 +73,7 @@ public class Users {
 		return output; 
 	}
 	
-	// Insert Item
+	// Insert User
 	public String insertUser(String fname, String lName, String dob, String address, String tNo, String uName, String pwd, String email, String uType) {
 		String output = ""; 
 		try {
@@ -110,7 +109,7 @@ public class Users {
 		return output; 
 	}
 	
-	// Update Item
+	// Update User
 	public String updateUser(String id, String fname, String lName, String dob, String address, String tNo, String uName, String pwd, String email, String uType) { 
 		String output = ""; 
 		try {
@@ -143,7 +142,7 @@ public class Users {
 		return output; 
 	 }
 	
-	// Delete Item
+	// Delete User
 	public String deleteUser(String id) { 
 		String output = ""; 
 		try { 
