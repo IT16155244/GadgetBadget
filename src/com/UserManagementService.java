@@ -1,6 +1,7 @@
 package com;
 
 import model.Users;
+import model.UserSelection;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -9,6 +10,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -22,6 +24,7 @@ import com.google.gson.JsonParser;
 @Path("/Users")
 public class UserManagementService {
 	Users userObject = new Users();
+	UserSelection userSelectObject = new UserSelection();
 	
 	// Read Users List
 	@GET
@@ -82,4 +85,12 @@ public class UserManagementService {
 		String output = userObject.deleteUser(id); 
 		return output;
 	}
+	
+	// Select User Detail By ID
+	@GET
+	@Path("/SelectUser/UserID={id}")
+	@Produces(MediaType.TEXT_HTML)
+	public String userSelect(@PathParam("id") int id) {
+		return userSelectObject.userSelect(id);
+	} 	
 }
